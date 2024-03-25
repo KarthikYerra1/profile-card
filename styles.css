@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-yellowish-green-color: hsl(75, 94%, 57%);
+  --white-color: hsl(0, 0%, 100%);
+  --grey-color: hsl(0, 0%, 20%);
+  --dark-grey-color: hsl(0, 0%, 12%);
+  --off-black-color: hsl(0, 0%, 8%);
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--off-black-color);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 90%;
+  max-width: 320px;
+  background-color: var(--dark-grey-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.card-container img {
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.card-container h2 {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  margin: 0.2em;
+  font-weight: 700;
+}
+
+.address {
+  margin: 0.6rem;
+  font-size: 1rem;
+  color: var(--primary-yellowish-green-color);
+  font-weight: 600;
+}
+
+.designation {
+  color: var(--white-color);
+  margin: 0.6rem;
+}
+
+.skills-list {
+  list-style: none;
+  color: var(--white-color);
+  margin-top: 0.4rem;
+  width: 100%;
+}
+
+.skills-list li {
+  background-color: var(--grey-color);
+  margin: 0.6rem;
+  padding: 0.6rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 1s;
+}
+
+.skills-list li:hover,
+.skills-list li:focus {
+  background-color: var(--primary-yellowish-green-color);
+  color: var(--dark-grey-color);
+}
+
+.attribution {
+  position: absolute;
+  top: 93%;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--white-color);
+  text-underline-offset: 4px;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--primary-yellowish-green-color);
+}
